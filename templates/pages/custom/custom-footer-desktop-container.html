@@ -1,0 +1,28 @@
+<div class="desktop-footer">
+    {{#if theme_settings.show_copyright_footer}}
+    <div class="desktop-footer-copyright">
+        <p class="powered-by">&copy; {{moment format="YYYY"}} {{settings.store_name}}. All rights reserved.</p>
+    </div>
+    {{/if}}
+    <div class="desktop-icon-container">
+        <div class="inner-container">
+            {{#each pages}}
+            {{#if name '===' "Facebook "}}
+            <a href="{{url}}" aria-label="{{name}}" target="_blank">
+                <img src="{{cdn 'assets/img/custom-img/facebook-logo.png'}}" />
+            </a>
+            {{/if}}
+            {{#if name '===' "Twitter"}}
+            <a href="{{url}}" aria-label="{{name}}" target="_blank">
+                <img src="{{cdn 'assets/img/custom-img/tweeter-logo.png'}}" />
+            </a>
+            {{/if}}
+            {{#if name '===' "Youtube"}}
+            <a href="{{url}}" aria-label="{{name}}" target="_blank">
+                <img src="{{cdn 'assets/img/custom-img/youtube-logo.png'}}" />
+            </a>
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>

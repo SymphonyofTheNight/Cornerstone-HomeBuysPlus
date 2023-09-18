@@ -1,0 +1,3 @@
+{
+  "pages/custom/custom-template/banner": "<div class=\"main-banner\">\r\n    <div class=\"inner-banner\">\r\n        <div class=\"content\">\r\n            <img src=\"{{cdn 'assets/img/custom-img/banner-text-1.png'}}\" class=\"banner-text-1\" />\r\n            <img src=\"{{cdn 'assets/img/custom-img/banner-text-2.png'}}\" class=\"banner-text-2\" />\r\n            <p class=\"p-text\">\r\n                Exclusive furniture packages to suit every need. Start from as little as $00.00\r\n            </p>\r\n            <button class=\"btn-action\">\r\n                SHOP NOW\r\n            </button>\r\n        </div>\r\n    </div>\r\n</div>\n"
+}

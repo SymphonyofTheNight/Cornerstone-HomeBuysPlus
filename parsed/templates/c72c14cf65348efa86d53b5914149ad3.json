@@ -1,0 +1,3 @@
+{
+  "pages/custom/custom-text-promotion-container": "<div class=\"custom-text-promotion-label\">\r\n    <div class=\"inner-container\">\r\n        <div class=\"content\">\r\n            <h1 class=\"label\">\r\n                MORE THAN JUST A STORE\r\n            </h1>\r\n            <div class=\"line-container\">\r\n                <div class=\"line\"></div>\r\n            </div>\r\n            <p class=\"text-content\">\r\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam Tempor libero vitae dolor\r\n                imperdiet porta. Suspendisse consectuter diam et ipsum faucibus, in blandit augue ac-\r\n            </p>\r\n        </div>\r\n    </div>\r\n</div>\n"
+}

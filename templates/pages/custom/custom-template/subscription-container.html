@@ -1,0 +1,37 @@
+<div class="roof-icon-container">
+    <img src="{{cdn 'assets/img/custom-img/footer_roof_img.png'}}" class="img" />
+</div>
+
+<article class="subscription-container footer-info-col" data-section-type="newsletterSubscription">
+    {{#if settings.show_newsletter_box}}
+        {{> pages/custom/custom-template/custom-subscription-form}}
+    {{/if}}
+</article>
+
+<div class="icon-container">
+    <div class="inner-container">
+        {{#each pages}}
+        {{#if name '===' "Facebook "}}
+        <a href="{{url}}" aria-label="{{name}}" target="_blank">
+            <img src="{{cdn 'assets/img/custom-img/facebook-logo.png'}}" />
+        </a>
+        {{/if}}
+        {{#if name '===' "Twitter"}}
+        <a href="{{url}}" aria-label="{{name}}" target="_blank">
+            <img src="{{cdn 'assets/img/custom-img/tweeter-logo.png'}}" />
+        </a>
+        {{/if}}
+        {{#if name '===' "Youtube"}}
+        <a href="{{url}}" aria-label="{{name}}" target="_blank">
+            <img src="{{cdn 'assets/img/custom-img/youtube-logo.png'}}" />
+        </a>
+        {{/if}}
+        {{/each}}
+    </div>
+</div>
+
+{{#if theme_settings.show_copyright_footer}}
+<div class="footer-copyright">
+    <p class="powered-by">&copy; {{moment format="YYYY"}} {{settings.store_name}}. All rights reserved.</p>
+</div>
+{{/if}}

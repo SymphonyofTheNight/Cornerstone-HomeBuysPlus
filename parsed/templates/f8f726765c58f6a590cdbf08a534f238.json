@@ -1,0 +1,3 @@
+{
+  "pages/custom/custom-new-products-label": "<div class=\"custom-new-products-label\">\r\n    <div class=\"inner-container\">\r\n        <div class=\"content\">\r\n            <h1 class=\"label\">\r\n                SHOP NEW & HOT DEALS PRODUCTS\r\n            </h1>\r\n            <div class=\"line-container\">\r\n                <div class=\"line\"></div>\r\n            </div>\r\n            <p class=\"text-content\">\r\n                Here are our hottest deals from across our entire site - all in one handy place for you to\r\n            </p>\r\n        </div>\r\n    </div>\r\n</div>"
+}

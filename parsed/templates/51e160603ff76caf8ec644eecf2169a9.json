@@ -1,0 +1,3 @@
+{
+  "pages/custom/custom-template/box-2": "<div class=\"box-2\">\r\n    <div class=\"content-container\">\r\n        <div class=\"text-content-container\">\r\n            <div class=\"circle\">\r\n                <div class=\"inner-content-container\">\r\n                    <img src=\"{{cdn 'assets/img/custom-img/visit-our-showroom.png'}}\" />\r\n                    <img src=\"{{cdn 'assets/img/custom-img/our-state-of-the-art.png'}}\" />\r\n                    <img src=\"{{cdn 'assets/img/custom-img/showroom.png'}}\" />\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\n"
+}

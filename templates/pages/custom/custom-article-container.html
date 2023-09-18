@@ -1,0 +1,19 @@
+<div class="custom-article-container">
+    {{#each theme_settings.blogs}}
+        {{> pages/custom/custom-template/article-card title=this.title url=this.url img=this.img-url meta=this.meta }}
+    {{/each}}
+    <div class="action-view-article">
+        {{#each pages}}
+            {{#if name '===' "Blog"}}
+                <li class="navPages-item navPages-item-page" style="list-style-type: none;">
+                    <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}" href="{{url}}"
+                        aria-label="{{name}}">
+                        <button class="btn-action">
+                            View All Articles
+                        </button>
+                    </a>
+                </li>
+            {{/if}}
+        {{/each}}
+    </div>
+</div>

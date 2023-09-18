@@ -1,0 +1,21 @@
+<h1 class="custom-header-logo header-logo--{{theme_settings.logo-position}}">
+
+    <div class="inner-custom-header-logo">
+
+        {{> pages/custom/custom-store-logo}}
+
+        <!-- custom search bar -->
+        <div class="custom-search-bar-container">
+            <div class="custom-inner-search-bar-container">
+                <div class="main-search-bar-container">
+                    <div class="navPages-quickSearch">
+                        {{> pages/custom/custom-template/custom-quick-search name='nav-menu-quick-search'}}
+                    </div>
+                    <img src="{{cdn 'assets/img/custom-img/search_icon.png'}}" class="search-icon" />
+                </div>
+                <img src="{{cdn 'assets/img/custom-img/cart_logo.png'}}" class="cart-logo" />
+            </div>
+        </div>
+    </div>
+
+</h1>

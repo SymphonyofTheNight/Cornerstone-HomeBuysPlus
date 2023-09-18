@@ -1,0 +1,3 @@
+{
+  "pages/custom/custom-shop-nav-label": "<div class=\"custom-shop-nav-label\">\r\n    <div class=\"inner-container\">\r\n        <div class=\"content\">\r\n            <h1 class=\"label\">\r\n                SHOP BY CATEGORIES\r\n            </h1>\r\n            <div class=\"line-container\">\r\n                <div class=\"line\"></div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+}

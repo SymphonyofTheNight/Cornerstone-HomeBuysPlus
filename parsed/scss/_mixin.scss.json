@@ -1,0 +1,3 @@
+{
+  "_mixin.scss": "@mixin baseDisplay ($height, $width, $display) {\r\n    display: $display;\r\n    height: $height;\r\n    width: $width;\r\n}\r\n\r\n@mixin baseColor($color) {\r\n    background: stencilColor($color);\r\n}\r\n\r\n@mixin Color($color) {\r\n    color: stencilColor($color);\r\n}\r\n\r\n\r\n// variables \r\n\r\n$custom-viewport: 820px;\r\n$medium-viewport: 800px;\r\n$custom-medium-viewport: 750px;\r\n$small-viewport: 500px;"
+}

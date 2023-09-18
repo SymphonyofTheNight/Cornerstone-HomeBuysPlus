@@ -1,0 +1,118 @@
+<div class="container" style="margin: 0px;">
+
+    <section class="custom-footer-info">
+
+        <article class="shop-by footer-info-col footer-info-col--small" data-section-type="footer-categories">
+            <h3 class="footer-info-heading">{{lang 'SHOP BY'}}</h3>
+            <ul class="footer-info-list">
+                {{#each theme_settings.shop_by_url}}
+                {{#if name '===' "HOME"}}
+                {{else}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </article>
+
+        <article class="information footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+            <h3 class="footer-info-heading">{{lang 'INFORMATION & SUPPORT'}}</h3>
+            <ul class="footer-info-list">
+                {{#each pages}}
+                {{#if name '===' "Delivery Detail"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "Returns Policy"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "About Us"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "Terms & Conditions"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "My Account"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "FAQ"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "Privacy Policy"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{/each}}
+                <!-- <li>
+                    <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>
+                </li> -->
+            </ul>
+        </article>
+
+        <article class="services footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+            <h3 class="footer-info-heading">{{lang 'CUSTOMER SERVICES'}}</h3>
+            <ul class="footer-info-list">
+                {{#each pages}}
+                {{#if name '===' "About Us"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "Contact Us"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "Delivery"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "Sign Up for Emails"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "Deal Match"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "Financing"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "FAQs"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{#if name '===' "Orders and Returns"}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+                {{/if}}
+                {{/each}}
+                <!-- <li>
+                    <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>
+                </li> -->
+            </ul>
+        </article>
+
+    </section>
+
+</div>

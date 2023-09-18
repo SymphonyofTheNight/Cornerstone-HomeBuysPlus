@@ -1,0 +1,17 @@
+<nav class="custom-shop-navigation-menu">
+    <ul class="navPages-list{{#if theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
+        {{#each theme_settings.shop_navigation_menu}}
+            <li class="navPages-item">
+            {{#if ../theme_settings.navigation_design '===' 'simple'}}
+            
+                <!-- custom scss only -->
+                {{> pages/custom/custom-shop-navigation-list}}
+
+            {{/if}}
+            {{#if ../theme_settings.navigation_design '===' 'alternate'}}
+                {{> components/common/navigation-list-alternate}}
+            {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+</nav>

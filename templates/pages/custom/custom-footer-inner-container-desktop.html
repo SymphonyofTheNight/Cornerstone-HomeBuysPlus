@@ -1,0 +1,145 @@
+<div class="custom-footer-inner-container-desktop">
+
+    {{#if theme_settings.social_icon_placement_bottom '!==' 'bottom_none'}}
+    <article
+        class="footer-info-col footer-info-col--social footer-info-col--{{#if theme_settings.social_icon_placement_bottom '===' 'bottom_left'}}left{{else}}right{{/if}}"
+        data-section-type="footer-webPages">
+        <h3 class="footer-info-heading">{{lang 'social.connect'}}</h3>
+        {{> components/common/social-links}}
+    </article>
+    {{/if}}
+
+    <section class="custom-footer-info">
+
+        <div class="content-container">
+            <div class="homebuysplus">
+                <img src="{{cdn 'assets/img/custom-img/logo.png'}}" />
+                <p class="text-content">
+                    At Home Buys Plus, we're not just about selling Furniture! Sure, as the Florida's number 1 Furniture
+                    store we do have one of the most exclusive collections of Furniture styles available online, but
+                    with our wide selection of products from amttresses to Fire Places, we cater to your entire
+                    furniture needs - and all at great value bargain prices!
+                </p>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <article class="shop-by footer-info-col footer-info-col--small" data-section-type="footer-categories">
+                <h3 class="footer-info-heading">{{lang 'SHOP BY'}}</h3>
+                <ul class="footer-info-list">
+                    {{#each theme_settings.shop_by_url}}
+                    {{#if name '===' "HOME"}}
+                    {{else}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </article>
+        </div>
+
+        <div class="content-container">
+            <article class="information footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+                <h3 class="footer-info-heading">{{lang 'INFORMATION & SUPPORT'}}</h3>
+                <ul class="footer-info-list">
+                    {{#each pages}}
+                    {{#if name '===' "Delivery Detail"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "Returns Policy"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "About Us"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "Terms & Conditions"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "My Account"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "FAQ"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "Privacy Policy"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                    <!-- <li>
+                        <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>
+                    </li> -->
+                </ul>
+            </article>
+        </div>
+
+        <div class="content-container">
+            <article class="services footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+                <h3 class="footer-info-heading">{{lang 'CUSTOMER SERVICES'}}</h3>
+                <ul class="footer-info-list">
+                    {{#each pages}}
+                    {{#if name '===' "About Us"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "Contact Us"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "Delivery"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "Sign Up for Emails"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "Deal Match"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "Financing"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "FAQs"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{#if name '===' "Orders and Returns"}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                    <!-- <li>
+                        <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>
+                    </li> -->
+                </ul>
+            </article>
+        </div>
+
+    </section>
+
+</div>

@@ -1,0 +1,21 @@
+@mixin baseDisplay ($height, $width, $display) {
+    display: $display;
+    height: $height;
+    width: $width;
+}
+
+@mixin baseColor($color) {
+    background: stencilColor($color);
+}
+
+@mixin Color($color) {
+    color: stencilColor($color);
+}
+
+
+// variables 
+
+$custom-viewport: 820px;
+$medium-viewport: 800px;
+$custom-medium-viewport: 750px;
+$small-viewport: 500px;

@@ -1,0 +1,12 @@
+<div class="custom-desktop-footer-container">
+    <div class="roof-icon-container">
+        <img src="{{cdn 'assets/img/custom-img/footer_roof_img.png'}}" class="roof-icon" />
+    </div>
+    <div class="form-container">
+        <article class="subscription-container footer-info-col" data-section-type="newsletterSubscription">
+            {{#if settings.show_newsletter_box}}
+                {{> pages/custom/custom-template/custom-subscription-form}}
+            {{/if}}
+        </article>
+    </div>
+</div>
